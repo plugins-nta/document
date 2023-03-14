@@ -1,6 +1,6 @@
 # Cách push package lên composer
 
-## I.Sử dụng Repository trong composer
+## I. Sử dụng Repository trong composer
 ### 1. Type 
 ####  Composer
 ##### &emsp; Đây là loại repository chính của ```composer```, nó sử dụng file ```packages.json``` để chứa toàn bộ metadata của package
@@ -8,7 +8,7 @@
 ####  VCS
 ##### &emsp; Viết tắt của Version Control System. Nó sử dụng các repository của các hệ thống quản lý mã nguồn như: git, svn, fossil v.v
 ![img_1.png](images/img_20.png)
-## II.Publish lên Packagist 
+## II. Publish lên Packagist 
 ### Các bước cần thực hiện
 
 - [Tạo package](#create-package)
