@@ -1,16 +1,22 @@
-# Cách tạo 1 package và publish lên composer
+# Cách push package lên composer
 
-
-
-
-## Các bước cần thực hiện
+## I.Sử dụng Repository trong composer
+### 1. Type 
+####  Composer
+##### &emsp; Đây là loại repository chính của ```composer```, nó sử dụng file ```packages.json``` để chứa toàn bộ metadata của package
+![img.png](images/img_19.png)
+####  VCS
+##### &emsp; Viết tắt của Version Control System. Nó sử dụng các repository của các hệ thống quản lý mã nguồn như: git, svn, fossil v.v
+![img_1.png](images/img_20.png)
+## II.Publish lên Packagist 
+### Các bước cần thực hiện
 
 - [Tạo package](#create-package)
 - [Publish package lên Git](#publish-package-to-github)
 - [Publish package lên Packagist](#publish-package-to-packagist)
 - [Demo](#demo)
 
-## <a name="create-package">Tạo package</a>
+### <a name="create-package">Tạo package</a>
 1. Một package sẽ có cấu trúc thư mục như sau <br>
    ![img.png](images/img_15.png) <br>
 2. Nội dung của package sẽ được đặt trong folder src <br>
@@ -23,9 +29,9 @@ composer init
    ![img_1.png](images/img_16.png) <br><br>
    Từ Laravel version 5.5, Laravel đã hỗ trợ package auto discover. Vì vậy chúng ta có thể thêm vào file composer.json để nó tự động map vào provider
    <br> *Lưu ý: Đặt tên namespace, class tuân theo chuẩn PSR-4 để laravel có thể tự autoload vào
-## <a name="publish-package-to-github">Publish package lên Git</a>
+### <a name="publish-package-to-github">Publish package lên Git</a>
 Push code package lên Git, tạo first release v1.0.0 cho package
-## <a name="publish-package-to-packagist">Publish package lên Packagist</a>
+### <a name="publish-package-to-packagist">Publish package lên Packagist</a>
 1. Tạo account trên Packagist (https://packagist.org/)
 2. Submit package mình mong muốn
    ![img_6.png](images/img_6.png)
@@ -34,7 +40,7 @@ Push code package lên Git, tạo first release v1.0.0 cho package
 ```php
 composer require {package_name}
 ```
-## <a name="demo">Demo</a>
+### <a name="demo">Demo</a>
 1. Tạo folder chứa package với cấu trúc thư mục như sau
    ![img_9.png](images/img_9.png) <br>
 2. Nội dung file composer.json 
